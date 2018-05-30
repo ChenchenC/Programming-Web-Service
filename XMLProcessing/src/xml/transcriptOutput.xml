@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:trancript xmlns:tns="http://www.example.org/TranscriptXMLSchema">
+	<tns:name>John Yusof</tns:name>
+	<tns:university>KTH</tns:university>
+	<tns:degree>Undergraduate</tns:degree>
+	<tns:dateOfGraduation>1994-01-01</tns:dateOfGraduation>
+	<tns:dateOfEnrolment>1991-01-01</tns:dateOfEnrolment>
+	<tns:module>
+		<tns:moduleName>Programming Web Service</tns:moduleName>
+		<tns:moduleCode>ME2015</tns:moduleCode>
+		<tns:moduleGrade>A</tns:moduleGrade>
+		<tns:moduleCredits>7.5</tns:moduleCredits>
+		<tns:moduleTerm>Summer</tns:moduleTerm>
+		<tns:moduleYear>2017</tns:moduleYear>
+	</tns:module>
+	<tns:module>
+		<tns:moduleName>Economics of Innovation</tns:moduleName>
+		<tns:moduleCode>ME2711</tns:moduleCode>
+		<tns:moduleGrade>D</tns:moduleGrade>
+		<tns:moduleCredits>6.0</tns:moduleCredits>
+		<tns:moduleTerm>Spring</tns:moduleTerm>
+		<tns:moduleYear>2016</tns:moduleYear>
+	</tns:module>
+	<tns:module>
+		<tns:moduleName>Intercultural Communication</tns:moduleName>
+		<tns:moduleCode>DM2556</tns:moduleCode>
+		<tns:moduleGrade>B</tns:moduleGrade>
+		<tns:moduleCredits>6.0</tns:moduleCredits>
+		<tns:moduleTerm>Spring</tns:moduleTerm>
+		<tns:moduleYear>2016</tns:moduleYear>
+	</tns:module>
+	<tns:module>
+		<tns:moduleName>Internet Networking</tns:moduleName>
+		<tns:moduleCode>AK2759</tns:moduleCode>
+		<tns:moduleGrade>C</tns:moduleGrade>
+		<tns:moduleCredits>6.0</tns:moduleCredits>
+		<tns:moduleTerm>Spring</tns:moduleTerm>
+		<tns:moduleYear>2016</tns:moduleYear>
+	</tns:module>
+	<tns:GPA>2.588235294117647</tns:GPA>
+</tns:trancript>

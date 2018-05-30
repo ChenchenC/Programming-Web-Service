@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://www.example.org/ApplicantProfileXMLSchema"
+	xmlns:tns="http://www.example.org/ApplicantProfileXMLSchema"
+	elementFormDefault="qualified">
+	<xsd:element name="ApplicantProfile">
+		<xsd:complexType>
+			<xsd:sequence>
+
+				<xsd:element name="CV" minOccurs="1">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="FirstName" type="xsd:string"
+								minOccurs="1" />
+							<xsd:element name="LastName" type="xsd:string"
+								minOccurs="1" />
+							<xsd:element name="PersonalNumber" minOccurs="1">
+								<xsd:simpleType>
+									<xsd:restriction base="xsd:string">
+										<xsd:pattern value="[0-9]{10}" />
+									</xsd:restriction>
+								</xsd:simpleType>
+							</xsd:element>
+							<xsd:element name="Gender" minOccurs="1">
+								<xsd:simpleType>
+									<xsd:restriction base="xsd:string">
+										<xsd:enumeration value="female" />
+										<xsd:enumeration value="male" />
+										<xsd:enumeration value="notClear" />
+									</xsd:restriction>
+								</xsd:simpleType>
+							</xsd:element>
+							<xsd:element name="Birthday" minOccurs="1" type="xsd:date" />
+							<xsd:element name="Nationality" type="xsd:string" />
+							<xsd:element name="Address" type="xsd:string" />
+							<xsd:element name="Email" type="xsd:string" />
+							<xsd:element name="Telephone">
+								<xsd:simpleType>
+									<xsd:restriction base="xsd:string">
+										<xsd:pattern value="[0-9]{10}" />
+									</xsd:restriction>
+								</xsd:simpleType>
+							</xsd:element>
+							<xsd:element name="LinkedinUrl" type="xsd:string" />
+							<xsd:element name="Achievements" type="xsd:string" />
+							<xsd:element name="Skills" type="xsd:string" />
+							<xsd:element name="MotivationExplanation" type="xsd:string" />
+							<xsd:element name="JobType">
+								<xsd:simpleType>
+									<xsd:restriction base="xsd:string">
+										<xsd:enumeration value="part-time" />
+										<xsd:enumeration value="permanent" />
+										<xsd:enumeration value="contract" />
+										<xsd:enumeration value="other" />
+									</xsd:restriction>
+								</xsd:simpleType>
+							</xsd:element>
+							<xsd:element name="DesiredWorkplace">
+								<xsd:complexType>
+									<xsd:sequence>
+										<xsd:element name="FirstChoice" minOccurs="1"
+											maxOccurs="unbounded" type="xsd:string"></xsd:element>
+										<xsd:element name="SecondChoice" minOccurs="0"
+											maxOccurs="unbounded" type="xsd:string"></xsd:element>
+									</xsd:sequence>
+								</xsd:complexType>
+							</xsd:element>
+							<xsd:element name="References">
+								<xsd:complexType>
+									<xsd:sequence>
+										<xsd:element name="Reference" minOccurs="1"
+											maxOccurs="unbounded">
+											<xsd:complexType>
+												<xsd:sequence>
+													<xsd:element name="RecommenderName" minOccurs="1"
+														maxOccurs="unbounded" type="xsd:string"></xsd:element>
+													<xsd:element name="Relation" minOccurs="1"
+														maxOccurs="unbounded" type="xsd:string"></xsd:element>
+													<xsd:element name="Organization" minOccurs="1"
+														maxOccurs="unbounded" type="xsd:string"></xsd:element>
+													<xsd:element name="Content" minOccurs="1"
+														maxOccurs="unbounded" type="xsd:string"></xsd:element>
+												</xsd:sequence>
+											</xsd:complexType>
+										</xsd:element>
+									</xsd:sequence>
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:sequence>
+
+						<xsd:attribute name="id" use="required">
+							<xsd:simpleType>
+								<xsd:restriction base="xsd:string">
+									<xsd:pattern value="[0-9]{6}" />
+								</xsd:restriction>
+							</xsd:simpleType>
+						</xsd:attribute>
+						<xsd:attribute name="submitted" use="required" type="xsd:dateTime" />
+
+					</xsd:complexType>
+				</xsd:element>
+
+				<xsd:element name="transcript" minOccurs="1" maxOccurs="unbounded">
+					<xsd:complexType>
+						<xsd:sequence>
+
+							<xsd:element name="university" type="xsd:string" />
+							<xsd:element name="degree">
+								<xsd:simpleType>
+									<xsd:restriction base="xsd:string">
+										<xsd:enumeration value="Undergraduate" />
+										<xsd:enumeration value="Masters" />
+										<xsd:enumeration value="Doctorate" />
+									</xsd:restriction>
+								</xsd:simpleType>
+							</xsd:element>
+
+							<xsd:element name="gradePointAverage" type="xsd:decimal" />
+							<xsd:element name="dateOfGraduation" type="xsd:date" />
+							<xsd:element name="dateOfEnrolment" type="xsd:date" />
+
+							<xsd:element name="module">
+								<xsd:complexType>
+									<xsd:sequence>
+										<xsd:element name="moduleName" type="xsd:string" />
+										<xsd:element name="moduleCode">
+											<xsd:complexType>
+												<xsd:sequence>
+													<xsd:element name="moduleCodePrefix">
+														<xsd:simpleType>
+															<xsd:restriction base="xsd:string">
+																<xsd:pattern value="([A-Z])*" />
+															</xsd:restriction>
+														</xsd:simpleType>
+													</xsd:element>
+													<xsd:element name="moduleCodeSuffix">
+														<xsd:simpleType>
+															<xsd:restriction base="xsd:string">
+																<xsd:pattern value="([0-9])*" />
+															</xsd:restriction>
+														</xsd:simpleType>
+													</xsd:element>
+												</xsd:sequence>
+											</xsd:complexType>
+										</xsd:element>
+										<xsd:element name="moduleGrade" type="xsd:string" />
+										<xsd:element name="moduleCredits" type="xsd:decimal" />
+										<xsd:element name="moduleTerm" type="xsd:string" />
+										<xsd:element name="moduleYear" type="xsd:int" />
+									</xsd:sequence>
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:sequence>
+						<xsd:attribute name="id" use="required">
+							<xsd:simpleType>
+								<xsd:restriction base="xsd:string">
+									<xsd:pattern value="[0-9]{6}" />
+								</xsd:restriction>
+							</xsd:simpleType>
+						</xsd:attribute>
+						<xsd:attribute name="submitted" use="required" type="xsd:dateTime" />
+					</xsd:complexType>
+				</xsd:element>
+
+				<xsd:element name="employmentRecord" minOccurs="1" maxOccurs="unbounded">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="jobRecord">
+								<xsd:complexType>
+									<xsd:sequence>
+										<xsd:element name="company" type="xsd:string" />
+										<xsd:element name="startOfEmployment" type="xsd:date" />
+										<xsd:element name="endOfEmployment" type="xsd:date" />
+										<xsd:element name="department" type="xsd:string" />
+										<xsd:element name="position" type="xsd:string">
+										</xsd:element>
+										<xsd:element name="salary" type="xsd:decimal" />
+										<xsd:element name="jobDesc" type="xsd:string" />
+										<xsd:element name="jobType">
+											<xsd:simpleType>
+												<xsd:restriction base="xsd:string">
+													<xsd:enumeration value="part-time" />
+													<xsd:enumeration value="permanent" />
+													<xsd:enumeration value="contract" />
+													<xsd:enumeration value="other" />
+												</xsd:restriction>
+											</xsd:simpleType>
+										</xsd:element>
+									</xsd:sequence>
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:sequence>
+						<xsd:attribute name="id" use="required">
+							<xsd:simpleType>
+								<xsd:restriction base="xsd:string">
+									<xsd:pattern value="[0-9]{6}" />
+								</xsd:restriction>
+							</xsd:simpleType>
+						</xsd:attribute>
+						<xsd:attribute name="submitted" use="required" type="xsd:dateTime" />
+					</xsd:complexType>
+				</xsd:element>
+				<xsd:element name="company" minOccurs="1" maxOccurs="unbounded">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="CompanyName" type="xsd:string"
+								minOccurs="1" />
+							<xsd:element name="Address">
+								<xsd:complexType>
+									<xsd:sequence>
+										<xsd:element name="Line1" type="xsd:string" />
+										<xsd:element name="Line2" type="xsd:string"
+											minOccurs="0" />
+										<xsd:element name="City" type="xsd:string" />
+										<xsd:element name="Country" type="xsd:string" />
+									</xsd:sequence>
+								</xsd:complexType>
+							</xsd:element>
+							<xsd:element name="YearEstablished" type="xsd:nonNegativeInteger" />
+							<xsd:element name="Telephone">
+								<xsd:simpleType>
+									<xsd:restriction base="xsd:string">
+										<xsd:pattern value="[0-9]{10}" />
+									</xsd:restriction>
+								</xsd:simpleType>
+							</xsd:element>
+							<xsd:element name="Fax">
+								<xsd:simpleType>
+									<xsd:restriction base="xsd:string">
+										<xsd:pattern value="[0-9]{10}" />
+									</xsd:restriction>
+								</xsd:simpleType>
+							</xsd:element>
+							<xsd:element name="PostCode">
+								<xsd:simpleType>
+									<xsd:restriction base="xsd:string">
+										<xsd:pattern value="[0-9]{5}" />
+									</xsd:restriction>
+								</xsd:simpleType>
+							</xsd:element>
+							<xsd:element name="Email" type="xsd:string" />
+							<xsd:element name="Website" type="xsd:string" />
+							<xsd:element name="EmployeeNumber" type="xsd:positiveInteger" />
+							<xsd:element name="CompanyType" type="xsd:string" />
+							<xsd:element name="Description" type="xsd:string" />
+							<xsd:element name="Contact">
+								<xsd:complexType>
+									<xsd:sequence>
+										<xsd:element name="FirstContactName" minOccurs="1"
+											maxOccurs="unbounded" type="xsd:string"></xsd:element>
+										<xsd:element name="FirstContactTitle" minOccurs="1"
+											maxOccurs="unbounded" type="xsd:string"></xsd:element>
+										<xsd:element name="SecondContactName" minOccurs="0"
+											maxOccurs="unbounded" type="xsd:string"></xsd:element>
+										<xsd:element name="SecondContactTitle" minOccurs="0"
+											maxOccurs="unbounded" type="xsd:string"></xsd:element>
+									</xsd:sequence>
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:sequence>
+
+						<xsd:attribute name="companyId" use="required">
+							<xsd:simpleType>
+								<xsd:restriction base="xsd:string">
+									<xsd:pattern value="[0-9]{6}" />
+								</xsd:restriction>
+							</xsd:simpleType>
+						</xsd:attribute>
+						<xsd:attribute name="submitted" use="required" type="xsd:dateTime" />
+
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

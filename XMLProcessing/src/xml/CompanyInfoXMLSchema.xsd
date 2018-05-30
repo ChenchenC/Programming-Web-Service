@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://www.example.org/CompanyInfoXMLSchema"
+	xmlns:tns="http://www.example.org/CompanyInfoXMLSchema"
+	elementFormDefault="qualified">
+	<xsd:element name="Company">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="CompanyInfo" maxOccurs="unbounded">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="CompanyName" type="xsd:string"
+								minOccurs="1" />
+							<xsd:element name="Address">
+								<xsd:complexType>
+									<xsd:sequence>
+										<xsd:element name="Line1" type="xsd:string" />
+										<xsd:element name="Line2" type="xsd:string"
+											minOccurs="0" />
+										<xsd:element name="City" type="xsd:string" />
+										<xsd:element name="Country" type="xsd:string" />
+									</xsd:sequence>
+								</xsd:complexType>
+							</xsd:element>
+							<xsd:element name="YearEstablished" type="xsd:nonNegativeInteger" />
+							<xsd:element name="Telephone">
+								<xsd:simpleType>
+									<xsd:restriction base="xsd:string">
+										<xsd:pattern value="[0-9]{10}" />
+									</xsd:restriction>
+								</xsd:simpleType>
+							</xsd:element>
+							<xsd:element name="Fax">
+								<xsd:simpleType>
+									<xsd:restriction base="xsd:string">
+										<xsd:pattern value="[0-9]{10}" />
+									</xsd:restriction>
+								</xsd:simpleType>
+							</xsd:element>
+							<xsd:element name="PostCode">
+								<xsd:simpleType>
+									<xsd:restriction base="xsd:string">
+										<xsd:pattern value="[0-9]{5}" />
+									</xsd:restriction>
+								</xsd:simpleType>
+							</xsd:element>
+							<xsd:element name="Email" type="xsd:string" />
+							<xsd:element name="Website" type="xsd:string" />
+							<xsd:element name="EmployeeNumber" type="xsd:positiveInteger" />
+							<xsd:element name="CompanyType" type="xsd:string" />
+							<xsd:element name="Description" type="xsd:string" />
+							<xsd:element name="Contact">
+								<xsd:complexType>
+									<xsd:sequence>
+										<xsd:element name="FirstContactName" minOccurs="1"
+											maxOccurs="unbounded" type="xsd:string"></xsd:element>
+										<xsd:element name="FirstContactTitle" minOccurs="1"
+											maxOccurs="unbounded" type="xsd:string"></xsd:element>
+										<xsd:element name="SecondContactName" minOccurs="0"
+											maxOccurs="unbounded" type="xsd:string"></xsd:element>
+										<xsd:element name="SecondContactTitle" minOccurs="0"
+											maxOccurs="unbounded" type="xsd:string"></xsd:element>
+									</xsd:sequence>
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:sequence>
+
+						<xsd:attribute name="companyId" use="required">
+							<xsd:simpleType>
+								<xsd:restriction base="xsd:string">
+									<xsd:pattern value="[0-9]{6}" />
+								</xsd:restriction>
+							</xsd:simpleType>
+						</xsd:attribute>
+						<xsd:attribute name="submitted" use="required" type="xsd:date" />
+
+					</xsd:complexType>
+				</xsd:element>
+
+			</xsd:sequence>
+		</xsd:complexType>
+
+	</xsd:element>
+</xsd:schema>

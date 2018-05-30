@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:transcript id="123456" submitted="2001-12-31T12:00:00"
+	xmlns:tns="http://www.example.org/TranscriptXMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.example.org/TranscriptXMLSchema transcript.xsd ">
+	<tns:person>
+		<tns:firstName>John</tns:firstName>
+		<tns:lastName>Yusof</tns:lastName>
+	</tns:person>
+	<tns:university>KTH</tns:university>
+	<tns:degree>Undergraduate</tns:degree>
+	<tns:gradePointAverage>0.0</tns:gradePointAverage>
+	<tns:dateOfGraduation>1994-01-01</tns:dateOfGraduation>
+	<tns:dateOfEnrolment>1991-01-01</tns:dateOfEnrolment>
+	<tns:module>
+		<tns:moduleName>Programming Web Service</tns:moduleName>
+		<tns:moduleCodePrefix>ME</tns:moduleCodePrefix>
+		<tns:moduleCodeSuffix>2015</tns:moduleCodeSuffix>
+		<tns:moduleGrade>A</tns:moduleGrade>
+		<tns:moduleCredits>7.5</tns:moduleCredits>
+		<tns:moduleTerm>Summer</tns:moduleTerm>
+		<tns:moduleYear>2017</tns:moduleYear>
+	</tns:module>
+	<tns:module>
+		<tns:moduleName>Economics of Innovation</tns:moduleName>
+		<tns:moduleCodePrefix>ME</tns:moduleCodePrefix>
+		<tns:moduleCodeSuffix>2711</tns:moduleCodeSuffix>
+		<tns:moduleGrade>D</tns:moduleGrade>
+		<tns:moduleCredits>6.0</tns:moduleCredits>
+		<tns:moduleTerm>Spring</tns:moduleTerm>
+		<tns:moduleYear>2016</tns:moduleYear>
+	</tns:module>
+	<tns:module>
+		<tns:moduleName>Intercultural Communication</tns:moduleName>
+		<tns:moduleCodePrefix>DM</tns:moduleCodePrefix>
+		<tns:moduleCodeSuffix>2556</tns:moduleCodeSuffix>
+		<tns:moduleGrade>B</tns:moduleGrade>
+		<tns:moduleCredits>6.0</tns:moduleCredits>
+		<tns:moduleTerm>Spring</tns:moduleTerm>
+		<tns:moduleYear>2016</tns:moduleYear>
+	</tns:module>
+	<tns:module>
+		<tns:moduleName>Internet Networking</tns:moduleName>
+		<tns:moduleCodePrefix>AK</tns:moduleCodePrefix>
+		<tns:moduleCodeSuffix>2759</tns:moduleCodeSuffix>
+		<tns:moduleGrade>C</tns:moduleGrade>
+		<tns:moduleCredits>6.0</tns:moduleCredits>
+		<tns:moduleTerm>Spring</tns:moduleTerm>
+		<tns:moduleYear>2016</tns:moduleYear>
+	</tns:module>
+</tns:transcript>

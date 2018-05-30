@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:Company xmlns:tns="http://www.example.org/CompanyInfoXMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.example.org/CompanyInfoXMLSchema CompanyInfoXMLSchema.xsd ">
+  <tns:CompanyInfo companyId="000001" submitted="2001-01-01">
+    <tns:CompanyName>Max</tns:CompanyName>
+    <tns:Address>
+      <tns:Line1>Ballmora</tns:Line1>
+      <tns:City>Stockholm</tns:City>
+      <tns:Country>Sweden</tns:Country>
+    </tns:Address>
+    <tns:YearEstablished>12</tns:YearEstablished>
+    <tns:Telephone>0735569855</tns:Telephone>
+    <tns:Fax>0735569855</tns:Fax>
+    <tns:PostCode>16453</tns:PostCode>
+    <tns:Email>max@sweden.se</tns:Email>
+    <tns:Website>http://max.se</tns:Website>
+    <tns:EmployeeNumber>1</tns:EmployeeNumber>
+    <tns:CompanyType>Food and beverage</tns:CompanyType>
+    <tns:Description>Sweden's most successful fast food</tns:Description>
+    <tns:Contact>
+      <tns:FirstContactName>Maxy</tns:FirstContactName>
+      <tns:FirstContactTitle>Founder</tns:FirstContactTitle>
+    </tns:Contact>
+  </tns:CompanyInfo>
+  <tns:CompanyInfo companyId="000002" submitted="2001-01-01">
+    <tns:CompanyName>Kentucky Fried Chicken</tns:CompanyName>
+    <tns:Address>
+      <tns:Line1>Farsta</tns:Line1>
+      <tns:City>Stockholm</tns:City>
+      <tns:Country>Sweden</tns:Country>
+    </tns:Address>
+    <tns:YearEstablished>0</tns:YearEstablished>
+    <tns:Telephone>0735569856</tns:Telephone>
+    <tns:Fax>0735569856</tns:Fax>
+    <tns:PostCode>16453</tns:PostCode>
+    <tns:Email>kentucky@kth.se</tns:Email>
+    <tns:Website>http://kentucky.com</tns:Website>
+    <tns:EmployeeNumber>1</tns:EmployeeNumber>
+    <tns:CompanyType>Food and Beverage</tns:CompanyType>
+    <tns:Description>The world's biggest fried chicken restaurant</tns:Description>
+    <tns:Contact>
+      <tns:FirstContactName>Kentucky</tns:FirstContactName>
+      <tns:FirstContactTitle>Founder</tns:FirstContactTitle>
+    </tns:Contact>
+  </tns:CompanyInfo>
+</tns:Company>

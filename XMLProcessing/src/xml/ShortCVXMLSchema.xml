@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- <?xml-stylesheet type="text/xsl" href="../method/ShortCVProcessor.xsl"?> -->
+<ShortCV id="000001" submitted="2001-01-01"
+	xmlns="http://www.example.org/ShortCVXMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.example.org/ShortCVXMLSchema ShortCVXMLSchema.xsd ">
+	<FirstName>John</FirstName>
+	<LastName>Yusof</LastName>
+	<PersonalNumber>9208226154</PersonalNumber>
+	<Gender>female</Gender>
+	<Birthday>2001-01-01</Birthday>
+	<Nationality>Indian</Nationality>
+	<Address>Farsta, Sweden</Address>
+	<Email>john.yusof@gmail.com</Email>
+	<Telephone>0735569855</Telephone>
+	<LinkedinUrl>-</LinkedinUrl>
+	<Achievements>3rd runner up in marathon</Achievements>
+	<Skills>Driving license, Diploma in powerpoint</Skills>
+	<MotivationExplanation>I wish to find a job that motivates me to go to work every morning.</MotivationExplanation>
+	<JobType>part-time</JobType>
+	<DesiredWorkplace>
+	StockHolm
+	</DesiredWorkplace>
+		<RecommenderName>Mr. Kentucky</RecommenderName>
+		<Relation>Supervisor</Relation>
+		<Organization>Kentucy Fried Chicken</Organization>
+		<Content>Mr. Yusof is a highly motivated individual who neer fails to disappoint.</Content>
+</ShortCV>

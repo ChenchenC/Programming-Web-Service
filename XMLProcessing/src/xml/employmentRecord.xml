@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:employmentRecord id="000001" submitted="2001-12-31T12:00:00" xmlns:tns="http://www.example.org/EmploymentRecXMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.example.org/EmploymentRecXMLSchema employmentRecord.xsd ">
+  <tns:person>
+    <tns:firstName>John</tns:firstName>
+    <tns:lastName>Yusof</tns:lastName>
+  </tns:person>
+  <tns:gender>male</tns:gender>
+  <tns:jobRecord>
+    <tns:company>Maxs</tns:company>
+    <tns:startOfEmployment>2011-02-01</tns:startOfEmployment>
+    <tns:endOfEmployment>2017-01-01</tns:endOfEmployment>
+    <tns:department>Kitchen</tns:department>
+    <tns:position>Head Chef</tns:position>
+    <tns:salary>4000</tns:salary>
+    <tns:jobDesc>In charge of managing the staffs in the kitchen to ensure that the kitchen is in running order</tns:jobDesc>
+    <tns:jobType>contract</tns:jobType>
+  </tns:jobRecord>
+  <tns:jobRecord>
+    <tns:company>Kentucky Fried Chicken Restaurant</tns:company>
+    <tns:startOfEmployment>2001-01-01</tns:startOfEmployment>
+    <tns:endOfEmployment>2011-01-01</tns:endOfEmployment>
+    <tns:department>Kitchen</tns:department>
+    <tns:position>Chef</tns:position>
+    <tns:salary>3500</tns:salary>
+    <tns:jobDesc>Incharge of frying the chickens up to satisfactory standards of KFC</tns:jobDesc>
+    <tns:jobType>part-time</tns:jobType>
+  </tns:jobRecord>
+</tns:employmentRecord>

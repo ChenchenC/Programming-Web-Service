@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+	xmlns:tns="http://serviceImplement" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://serviceImplement">
+	<wsdl:types>
+		<xsd:schema targetNamespace="http://serviceImplement">
+			<xsd:element name="loginCheck">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="userName" type="xsd:string" />
+						<xsd:element name="password" type="xsd:string" />
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="loginCheckResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="ifPermitted" type="xsd:string" />
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+
+			<xsd:element name="bookTicket">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="flightNumber" type="xsd:string" />
+						<xsd:element name="userId" type="xsd:string" />
+						<xsd:element name="creditCardNumber" type="xsd:string" />
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="bookTicketResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="bookTicketReturn" type="xsd:string" />
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="issueTicket">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="bookingNumber" type="xsd:string" />
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="issueTicketResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="issueTicketReturn" type="xsd:string" />
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+		</xsd:schema>
+	</wsdl:types>
+	<wsdl:message name="loginRequest">
+		<wsdl:part element="tns:loginCheck" name="parameters" />
+	</wsdl:message>
+	<wsdl:message name="loginResponse">
+		<wsdl:part element="tns:loginCheckResponse" name="parameters" />
+	</wsdl:message>
+
+	<wsdl:message name="bookTicketRequest">
+
+		<wsdl:part element="tns:bookTicket" name="parameters">
+
+		</wsdl:part>
+
+	</wsdl:message>
+
+	<wsdl:message name="bookTicketResponse">
+
+		<wsdl:part element="tns:bookTicketResponse" name="parameters">
+
+		</wsdl:part>
+
+	</wsdl:message>
+
+	<wsdl:message name="issueTicketResponse">
+
+		<wsdl:part element="tns:issueTicketResponse" name="parameters">
+
+		</wsdl:part>
+
+	</wsdl:message>
+
+	<wsdl:message name="issueTicketRequest">
+
+		<wsdl:part element="tns:issueTicket" name="parameters">
+
+		</wsdl:part>
+
+	</wsdl:message>
+	<wsdl:portType name="Login">
+		<wsdl:operation name="loginCheck">
+			<wsdl:input message="tns:loginRequest" name="loginRequest" />
+			<wsdl:output message="tns:loginResponse" name="loginResponse" />
+		</wsdl:operation>
+		<wsdl:operation name="bookTicket">
+
+			<wsdl:input message="tns:bookTicketRequest" name="bookTicketRequest">
+
+			</wsdl:input>
+
+			<wsdl:output message="tns:bookTicketResponse" name="bookTicketResponse">
+
+			</wsdl:output>
+
+		</wsdl:operation>
+
+		<wsdl:operation name="issueTicket">
+
+			<wsdl:input message="tns:issueTicketRequest" name="issueTicketRequest">
+
+			</wsdl:input>
+
+			<wsdl:output message="tns:issueTicketResponse" name="issueTicketResponse">
+
+			</wsdl:output>
+
+		</wsdl:operation>
+
+	</wsdl:portType>
+	<wsdl:binding name="LoginSOAP" type="tns:Login">
+		<soap:binding style="document"
+			transport="http://schemas.xmlsoap.org/soap/http" />
+		<wsdl:operation name="loginCheck">
+			<soap:operation soapAction="" />
+			<wsdl:input name="loginRequest">
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output name="loginResponse">
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="bookTicket">
+
+			<soap:operation soapAction="" />
+
+			<wsdl:input name="bookTicketRequest">
+
+				<soap:body use="literal" />
+
+			</wsdl:input>
+
+			<wsdl:output name="bookTicketResponse">
+
+				<soap:body use="literal" />
+
+			</wsdl:output>
+
+		</wsdl:operation>
+
+		<wsdl:operation name="issueTicket">
+
+			<soap:operation soapAction="" />
+
+			<wsdl:input name="issueTicketRequest">
+
+				<soap:body use="literal" />
+
+			</wsdl:input>
+
+			<wsdl:output name="issueTicketResponse">
+
+				<soap:body use="literal" />
+
+			</wsdl:output>
+
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:service name="LoginService">
+		<wsdl:port binding="tns:LoginSOAP" name="LoginSOAPPort">
+			<soap:address
+				location="http://localhost:8080/TopDownService1/services/Login" />
+		</wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<applicantProfile xmlns="http://www.example.org/ShortCVXMLSchema">
+	<achievement>3rd runner up in marathon</achievement>
+	<address>Farsta, Sweden</address>
+	<birthday>2001-01-01</birthday>
+	<companyInfoList>
+		<city>Stockholm</city>
+		<companyId>000002</companyId>
+		<companyName>Kentucky Fried Chicken</companyName>
+		<companyType>Food and Beverage</companyType>
+		<country>Sweden</country>
+		<description>The world's biggest fried chicken restaurant
+		</description>
+		<email>kentucky@kth.se</email>
+		<employeeNumber>1</employeeNumber>
+		<fax>0735569856</fax>
+		<firstContactName>Kentucky</firstContactName>
+		<firstContactTitle>Founder</firstContactTitle>
+		<line1>Farsta</line1>
+		<line2></line2>
+		<postCode>16453</postCode>
+		<secondContactName></secondContactName>
+		<secondContactTitle></secondContactTitle>
+		<submitted>2001-01-01</submitted>
+		<telephone>0735569856</telephone>
+		<website>http://kentucky.com</website>
+		<yearEstablished>0</yearEstablished>
+	</companyInfoList>
+	<companyInfoList>
+		<city>Stockholm</city>
+		<companyId>000002</companyId>
+		<companyName>Kentucky Fried Chicken</companyName>
+		<companyType>Food and Beverage</companyType>
+		<country>Sweden</country>
+		<description>The world's biggest fried chicken restaurant
+		</description>
+		<email>kentucky@kth.se</email>
+		<employeeNumber>1</employeeNumber>
+		<fax>0735569856</fax>
+		<firstContactName>Kentucky</firstContactName>
+		<firstContactTitle>Founder</firstContactTitle>
+		<line1>Farsta</line1>
+		<line2></line2>
+		<postCode>16453</postCode>
+		<secondContactName></secondContactName>
+		<secondContactTitle></secondContactTitle>
+		<submitted>2001-01-01</submitted>
+		<telephone>0735569856</telephone>
+		<website>http://kentucky.com</website>
+		<yearEstablished>0</yearEstablished>
+	</companyInfoList>
+	<content>Mr. Yusof is a highly motivated individual who neer fails to
+		disappoint.</content>
+	<email>john.yusof@gmail.com</email>
+	<employmentList>
+		<company>Maxs</company>
+		<department>Kitchen</department>
+		<employmentRecordId></employmentRecordId>
+		<endOfEmployment>2017-01-01</endOfEmployment>
+		<jobDesc>In charge of managing the staffs in the kitchen to ensure
+			that the kitchen is in running order</jobDesc>
+		<jobType>contract</jobType>
+		<position>Head Chef</position>
+		<salary>4000</salary>
+		<startOfEmployment>2011-02-01</startOfEmployment>
+	</employmentList>
+	<employmentList>
+		<company>Kentucky Fried Chicken Restaurant</company>
+		<department>Kitchen</department>
+		<employmentRecordId></employmentRecordId>
+		<endOfEmployment>2011-01-01</endOfEmployment>
+		<jobDesc>Incharge of frying the chickens up to satisfactory standards
+			of KFC</jobDesc>
+		<jobType>part-time</jobType>
+		<position>Chef</position>
+		<salary>3500</salary>
+		<startOfEmployment>2001-01-01</startOfEmployment>
+	</employmentList>
+	<firstChoice>
+		StockHolm
+	</firstChoice>
+	<firstName>John</firstName>
+	<gender>female</gender>
+	<jobType>part-time</jobType>
+	<lastName>Yusof</lastName>
+	<linkedinUrl>-</linkedinUrl>
+	<motivationExplanation>I wish to find a job that motivates me to go to
+		work every morning.</motivationExplanation>
+	<nationality>Indian</nationality>
+	<organization>Kentucy Fried Chicken</organization>
+	<personalNumber>9208226154</personalNumber>
+	<recommenderName>Mr. Kentucky</recommenderName>
+	<relation>Supervisor</relation>
+	<secondChoice></secondChoice>
+	<skills>Driving license, Diploma in powerpoint</skills>
+	<telephone>0735569855</telephone>
+	<transcriptList>
+		<dateOfEnrolment>1994-01-01</dateOfEnrolment>
+		<dateOfGraduation>1991-01-01</dateOfGraduation>
+		<degree>Undergraduate</degree>
+		<gradePointAverage>2.588235294117647</gradePointAverage>
+		<moduleList>
+			<moduleCode>ME2015</moduleCode>
+			<moduleCredits>7.5</moduleCredits>
+			<moduleGrade>A</moduleGrade>
+			<moduleName>Programming Web Service</moduleName>
+			<moduleTerm>Summer</moduleTerm>
+			<moduleYear>2017</moduleYear>
+		</moduleList>
+		<moduleList>
+			<moduleCode>ME2711</moduleCode>
+			<moduleCredits>6.0</moduleCredits>
+			<moduleGrade>D</moduleGrade>
+			<moduleName>Economics of Innovation</moduleName>
+			<moduleTerm>Spring</moduleTerm>
+			<moduleYear>2016</moduleYear>
+		</moduleList>
+		<moduleList>
+			<moduleCode>DM2556</moduleCode>
+			<moduleCredits>6.0</moduleCredits>
+			<moduleGrade>B</moduleGrade>
+			<moduleName>Intercultural Communication</moduleName>
+			<moduleTerm>Spring</moduleTerm>
+			<moduleYear>2016</moduleYear>
+		</moduleList>
+		<moduleList>
+			<moduleCode>AK2759</moduleCode>
+			<moduleCredits>6.0</moduleCredits>
+			<moduleGrade>C</moduleGrade>
+			<moduleName>Internet Networking</moduleName>
+			<moduleTerm>Spring</moduleTerm>
+			<moduleYear>2016</moduleYear>
+		</moduleList>
+		<name>John Yusof</name>
+		<university>KTH</university>
+	</transcriptList>
+</applicantProfile>

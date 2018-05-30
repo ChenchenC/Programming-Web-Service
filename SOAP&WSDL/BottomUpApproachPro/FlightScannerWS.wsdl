@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://method" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:impl="http://method" xmlns:intf="http://method" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<!--WSDL created by Apache Axis version: 1.4
+Built on Apr 22, 2006 (06:55:48 PDT)-->
+ <wsdl:types>
+  <schema elementFormDefault="qualified" targetNamespace="http://method" xmlns="http://www.w3.org/2001/XMLSchema">
+   <element name="computeItineraryPrice">
+    <complexType>
+     <sequence>
+      <element name="departureCity" type="xsd:string"/>
+      <element name="destination" type="xsd:string"/>
+      <element name="departureDateStr" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="computeItineraryPriceResponse">
+    <complexType>
+     <sequence>
+      <element name="computeItineraryPriceReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="getAvailableFlights">
+    <complexType>
+     <sequence>
+      <element name="departureCity" type="xsd:string"/>
+      <element name="destination" type="xsd:string"/>
+      <element name="departureDateStr" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="getAvailableFlightsResponse">
+    <complexType>
+     <sequence>
+      <element name="getAvailableFlightsReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="getFlights">
+    <complexType>
+     <sequence>
+      <element name="departureCity" type="xsd:string"/>
+      <element name="destination" type="xsd:string"/>
+      <element name="departureDateStr" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="getFlightsResponse">
+    <complexType>
+     <sequence>
+      <element name="getFlightsReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+  </schema>
+ </wsdl:types>
+
+   <wsdl:message name="getAvailableFlightsRequest">
+
+      <wsdl:part element="impl:getAvailableFlights" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getFlightsResponse">
+
+      <wsdl:part element="impl:getFlightsResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getFlightsRequest">
+
+      <wsdl:part element="impl:getFlights" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="computeItineraryPriceResponse">
+
+      <wsdl:part element="impl:computeItineraryPriceResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="computeItineraryPriceRequest">
+
+      <wsdl:part element="impl:computeItineraryPrice" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getAvailableFlightsResponse">
+
+      <wsdl:part element="impl:getAvailableFlightsResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:portType name="FlightScannerWS">
+
+      <wsdl:operation name="computeItineraryPrice">
+
+         <wsdl:input message="impl:computeItineraryPriceRequest" name="computeItineraryPriceRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:computeItineraryPriceResponse" name="computeItineraryPriceResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getAvailableFlights">
+
+         <wsdl:input message="impl:getAvailableFlightsRequest" name="getAvailableFlightsRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:getAvailableFlightsResponse" name="getAvailableFlightsResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getFlights">
+
+         <wsdl:input message="impl:getFlightsRequest" name="getFlightsRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:getFlightsResponse" name="getFlightsResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:portType>
+
+   <wsdl:binding name="FlightScannerWSSoapBinding" type="impl:FlightScannerWS">
+
+      <wsdlsoap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+
+      <wsdl:operation name="computeItineraryPrice">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="computeItineraryPriceRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="computeItineraryPriceResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getAvailableFlights">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getAvailableFlightsRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getAvailableFlightsResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getFlights">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getFlightsRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getFlightsResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:binding>
+
+   <wsdl:service name="FlightScannerWSService">
+
+      <wsdl:port binding="impl:FlightScannerWSSoapBinding" name="FlightScannerWS">
+
+         <wsdlsoap:address location="http://localhost:8080/BottomUpForService234/services/FlightScannerWS"/>
+
+      </wsdl:port>
+
+   </wsdl:service>
+
+</wsdl:definitions>
