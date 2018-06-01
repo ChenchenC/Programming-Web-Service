@@ -1,0 +1,4 @@
+﻿  main.cpp
+c:\users\chenchen cheng\dropbox\courses\computer graphics and interaction\lab\animation lab2\particlelab\main.cpp(210): warning C4838: conversion from 'double' to 'GLfloat' requires a narrowing conversion
+  particleLab.vcxproj -> C:\Users\Chenchen Cheng\Dropbox\Courses\Computer Graphics and Interaction\lab\Animation Lab2\particleLab\.\Debug\ParticleLab.exe
+  particleLab.vcxproj -> .\Debug/particleLab.pdb (Full PDB)

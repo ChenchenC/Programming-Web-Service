@@ -1,0 +1,7 @@
+﻿  myQuat.cpp
+c:\programming\computer graphics and interaction\prodirectory\task2.2\task2.2\myquat.cpp(114): warning C4838: conversion from 'double' to 'GLfloat' requires a narrowing conversion
+  main.cpp
+c:\programming\computer graphics and interaction\prodirectory\task2.2\task2.2\main.cpp(105): warning C4838: conversion from 'double' to 'GLfloat' requires a narrowing conversion
+  Generating Code...
+  Task2.2.vcxproj -> C:\Programming\Computer Graphics and Interaction\ProDirectory\Task2.2\Debug\Task2.2.exe
+  Task2.2.vcxproj -> C:\Programming\Computer Graphics and Interaction\ProDirectory\Task2.2\Debug\Task2.2.pdb (Partial PDB)
